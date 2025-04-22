@@ -9,7 +9,7 @@ ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
-RUN pip install dysgu==1.6.2 && \
+RUN pip install dysgu && \
 wget https://github.com/samtools/samtools/releases/download/1.18/samtools-1.18.tar.bz2 && \
 tar -xvf samtools-1.18.tar.bz2 && \
 rm samtools-1.18.tar.bz2 && \
